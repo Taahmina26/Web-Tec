@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Prison Cell Management System</title>
+</head>
+<body>
+    <h1>Prison Cell Management System</h1>
+    <h2>System Authentication Portal</h2>
+    <p><a href="../commonui/index.html">Back to Home</a></p>
+    <hr>
+    <form action="#" method="POST">
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr><th colspan="2">User Login</th></tr>
+            <tr>
+                <td><label for="role">Select User Role:</label></td>
+                <td>
+                    <select id="role" name="role" required>
+                        <option value="">-- Choose Role --</option>
+                        <option value="admin">System Admin</option>
+                        <option value="jailer">Jailer / Warden</option>
+                        <option value="doctor">Prison Doctor</option>
+                        <option value="visitor">Visitor / Public</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="username">Username / ID / Email:</label></td>
+                <td><input type="text" id="username" name="username" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password / Key:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Login">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <hr>
+    <h3>Don't have an account? Register below:</h3>
+    <ul>
+        <li><a href="../admin/adminregister.html">Admin Registration</a></li>
+        <li><a href="../jailer/jailerregister.html">Jailer Registration</a></li>
+        <li><a href="../doctor/doctorregister.html">Doctor Registration</a></li>
+        <li><a href="../visitor/visitorregister.html">Visitor Registration</a></li>
+    </ul>
+</body>
+</html>
