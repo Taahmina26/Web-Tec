@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visitor Registration - Prison Cell Management System</title>
+</head>
+<body>
+
+    <h1>Prison Cell Management System</h1>
+    <h2>Visitor Registration Portal</h2>
+
+    <!-- Navigation link back to login or home page -->
+    <p>
+        <a href="../commonui/login.html">Already have an account? Login here</a> | 
+        <a href="../commonui/index.html">Back to Home</a>
+    </p>
+
+    <hr>
+
+    <!-- Registration Form -->
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th colspan="2">Create Visitor Account</th>
+            </tr>
+            
+            <!-- Standard User Fields -->
+            <tr>
+                <td><label for="fullname">Full Name:</label></td>
+                <td><input type="text" id="fullname" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Address:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+
+            <!-- Unique Visitor Registration Inputs -->
+            <tr>
+                <td><label for="relation">Relation to Inmate:</label></td>
+                <td><input type="text" id="relation" name="relation" placeholder="e.g., Spouse, Lawyer, Parent" required></td>
+            </tr>
+            <tr>
+                <td><label for="inmate_id">Target Inmate ID:</label></td>
+                <td><input type="text" id="inmate_id" name="inmate_id" placeholder="e.g., INM-1024" required></td>
+            </tr>
+            <tr>
+                <td><label for="id_document">National ID Document:</label></td>
+                <td><input type="file" id="id_document" name="id_document" required></td>
+            </tr>
+            <tr>
+                <td><label for="id_proof_number">ID Proof Number:</label></td>
+                <td><input type="text" id="id_proof_number" name="id_proof_number" placeholder="Enter ID Card Number" required></td>
+            </tr>
+            <tr>
+                <td><label for="contact_address">Contact Address:</label></td>
+                <td>
+                    <textarea id="contact_address" name="contact_address" rows="4" cols="30" placeholder="Enter your full residential address" required></textarea>
+                </td>
+            </tr>
+
+            <!-- Submit and Reset Buttons -->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Clear Form">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
