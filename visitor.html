@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visitor Registration - Prison Cell Management System</title>
+    <!-- Connected to CSS/visitor.css -->
+    <link rel="stylesheet" href="../CSS/visitor.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="main-header">
+        <h1>Prison Cell Management System</h1>
+        <h2>Visitor Registration Portal</h2>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="login.html">Already have an account? Login here</a></li>
+            <li><a href="homepage.html">Back to Home</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Form Container -->
+    <main class="container">
+        <div class="form-container">
+            <form id="visitorForm" action="#" method="POST" enctype="multipart/form-data">
+                <h2>Create Visitor Account</h2>
+                
+                <!-- Standard User Fields -->
+                <div class="input-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                    <span id="nameError" class="error-msg"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address:</label>
+                    <input type="text" id="email" name="email">
+                    <span id="emailError" class="error-msg"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <span id="passwordError" class="error-msg"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm_password">Confirm Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password">
+                    <span id="confirmError" class="error-msg"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone" placeholder="e.g., 01712345678">
+                    <span id="phoneError" class="error-msg"></span>
+                </div>
+
+                <!-- Unique Visitor Registration Inputs -->
+                <div class="input-group">
+                    <label for="relation">Relation to Inmate:</label>
+                    <input type="text" id="relation" name="relation" placeholder="e.g., Spouse, Lawyer, Parent">
+                    <span id="relationError" class="error-msg"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="inmate_id">Target Inmate ID:</label>
+                    <input type="text" id="inmate_id" name="inmate_id" placeholder="e.g., INM-1024">
+                    <span id="inmateError" class="error-msg"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="id_document">National ID Document:</label>
+                    <input type="file" id="id_document" name="id_document">
+                    <span id="fileError" class="error-msg"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="id_proof_number">ID Proof Number:</label>
+                    <input type="text" id="id_proof_number" name="id_proof_number" placeholder="Enter ID Card Number">
+                    <span id="proofError" class="error-msg"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="contact_address">Contact Address:</label>
+                    <textarea id="contact_address" name="contact_address" rows="4" placeholder="Enter your full residential address"></textarea>
+                    <span id="addressError" class="error-msg"></span>
+                </div>
+
+                <!-- Submit and Reset Buttons -->
+                <div class="button-group">
+                    <input type="submit" value="Register" class="btn btn-primary">
+                    <input type="reset" value="Clear Form" class="btn btn-secondary">
+                </div>
+
+                <div id="successMessage" style="margin-top: 15px; font-weight: bold; text-align: center;"></div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Connected to JS/visitor.js -->
+    <script src="../JS/visitor.js"></script>
+</body>
+</html>

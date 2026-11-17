@@ -1,0 +1,329 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+    background-color: aliceblue;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: navy;
+    box-shadow: 0 2px 8px gray;
+    position: relative;
+    z-index: 1;
+}
+
+header img {
+    display: block;
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#page-title {
+    color: white;
+    font-size: 28px;
+    margin: 0;
+}
+
+h2 {
+    margin: 25px;
+    color: navy;
+}
+
+h3 {
+    margin: 25px;
+    font-size: 21px;
+    color: navy;
+}
+
+p {
+    margin: 15px 25px;
+}
+
+hr {
+    margin: 20px 25px;
+    border: 1px solid lightgray;
+}
+
+.navbar {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: darkslategray;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: teal;
+}
+
+.navbar a.active {
+    background-color: teal;
+}
+
+fieldset {
+    position: relative;
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 10px lightgray;
+}
+
+legend {
+    padding-top: 0;
+    padding-right: 10px;
+    padding-bottom: 0;
+    padding-left: 10px;
+    color: navy;
+    font-weight: bold;
+}
+
+fieldset a {
+    color: teal;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+fieldset a:hover {
+    color: navy;
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    max-width: 750px;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid lightgray;
+    vertical-align: middle;
+}
+
+tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+tr:hover {
+    background-color: lightcyan;
+}
+
+ul,
+ol {
+    margin: 15px 25px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 40px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 15px;
+    background-color: navy;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer b {
+    color: white;
+}
+
+form {
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 25px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 10px lightgray;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+td label {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+td input,
+td select,
+td textarea {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+input[type="file"] {
+    display: block;
+    width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid teal;
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    display: inline-block;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: navy;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: teal;
+}
+
+.form-buttons {
+    text-align: center;
+}
+
+.help-widget {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+.help-button {
+    width: 55px;
+    height: 55px;
+    padding: 0;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: teal;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 3px 10px gray;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.help-button:hover {
+    background-color: navy;
+}
+
+.help-panel {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 65px;
+    width: 300px;
+    max-width: 300px;
+    padding: 15px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 12px gray;
+}
+
+.help-widget:hover .help-panel,
+.help-widget:focus-within .help-panel {
+    display: block;
+}
+
+.help-panel h3 {
+    margin: 0 0 10px;
+    color: navy;
+}
+
+.help-panel p {
+    margin: 5px 0;
+}
+
+.help-panel ul {
+    margin: 10px 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 20px;
+}
+
+.help-panel li {
+    margin-bottom: 8px;
+}

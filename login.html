@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Prison Cell Management System</title>
+    <!-- Connected to CSS/login.css -->
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="main-header">
+        <h1>Prison Cell Management System</h1>
+        <h2>System Authentication Portal</h2>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="homepage.html">Back to Home</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="container">
+        <div class="form-container">
+            <form id="loginForm" action="#" method="POST">
+                <h2>User Login</h2>
+                
+                <div class="input-group">
+                    <label for="role">Select User Role:</label>
+                    <select id="role" name="role">
+                        <option value="">-- Choose Role --</option>
+                        <option value="admin">System Admin</option>
+                        <option value="jailer">Jailer / Warden</option>
+                        <option value="doctor">Prison Doctor</option>
+                        <option value="visitor">Visitor / Public</option>
+                    </select>
+                    <span id="roleError" class="error-msg"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="username">Username / ID / Email:</label>
+                    <input type="text" id="username" name="username">
+                    <span id="usernameError" class="error-msg"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password / Key:</label>
+                    <input type="password" id="password" name="password">
+                    <span id="passwordError" class="error-msg"></span>
+                </div>
+
+                <div class="button-group">
+                    <input type="submit" value="Login" class="btn btn-primary">
+                    <input type="reset" value="Clear" class="btn btn-secondary">
+                </div>
+
+                <div id="loginMessage" style="margin-top: 15px; font-weight: bold; text-align: center;"></div>
+            </form>
+        </div>
+
+        <!-- Registration Link Section -->
+        <div class="register-links-section">
+            <h3>Don't have an account? Register below:</h3>
+            <ul class="reg-list">
+                <li><a href="visitor.html">Visitor Registration</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Connected to JS/login.js -->
+    <script src="../JS/login.js"></script>
+</body>
+</html>
